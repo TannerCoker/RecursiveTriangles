@@ -1,4 +1,7 @@
 '''
+@Author: Tanner Coker
+
+This program will recursively make triangles insides of each other. Each line is will be a different, randomly made color.
 '''
 
 import pygame
@@ -32,6 +35,8 @@ def makeTriangles(window,width,height):
     pygame.display.flip()
     multiTriangles(window, int(width/2), int(20), int(width-20), int(height-20), int(20), int(height-20))
 
+#recursively makes smaller triangles within the main triangle that was previously generated.
+#each new triangle will be made at half the size of the previous triangle.
 def multiTriangles(window, x1, y1, x2, y2, x3, y3):
     if x2-x3 < 5:
         pass
