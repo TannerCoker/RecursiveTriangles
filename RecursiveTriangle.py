@@ -8,6 +8,7 @@ def main():
     width = int(1000)
     height = int(1000)
     window = pygame.display.set_mode((width,height))
+    pygame.display.set_caption("Recursive Triangles")
 
     pygame.display.flip()
     makeTriangles(window,width,height)
